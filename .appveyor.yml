@@ -1,7 +1,8 @@
 image: Ubuntu 1804 #образдлясборки
 stack: node10 #окружение 
 branches: 
-  only: -master #веткa git 
+  only: 
+    -master #веткa git 
 cache: node_modules #кеширование
 install: 
   -npm install #команда установки зависимостей 
