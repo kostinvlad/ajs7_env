@@ -1,7 +1,8 @@
 image: Ubuntu 1804 #образдлясборки
 stack: node10 #окружение 
 branches: 
-  only: 
+  only:
+    -main
     -master
     -origin 
 cache: node_modules 
