@@ -35,3 +35,5 @@ test_script:
   - cmd: yarn unlink webpack
   - cmd: yarn global add codecov && codecov -F integration --disable=gcov
   - cmd: del /F /Q .jest-cache\\haste-map* .jest-cache\\perf-cache* 2> null || Ver > null
+deploy_script:
+  -npx push-dir --dir=dist --branch=master --force --verbose
